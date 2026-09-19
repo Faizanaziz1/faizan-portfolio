@@ -10,12 +10,12 @@ function resize() {
   canvas.style.width = window.innerWidth + "px";
   canvas.style.height = window.innerHeight + "px";
 
-  const count = Math.min(850, Math.floor((window.innerWidth * window.innerHeight) / 1800));
+  const count = Math.min(1200, Math.floor((window.innerWidth * window.innerHeight) / 1150));
   stars = Array.from({ length: count }, () => ({
     x: Math.random() * width,
     y: Math.random() * height,
-    r: (Math.random() * 1.3 + .2) * devicePixelRatio,
-    a: Math.random() * .75 + .15,
+    r: (Math.random() * 1.05 + .15) * devicePixelRatio,
+    a: Math.random() * .62 + .12,
     tw: Math.random() * Math.PI * 2,
     speed: Math.random() * .018 + .004
   }));
@@ -47,3 +47,36 @@ window.addEventListener("mousemove", e => {
 
 resize();
 draw();
+
+const music = document.getElementById("backgroundMusic");
+const musicToggle = document.getElementById("musicToggle");
+
+if (music && musicToggle) {
+  music.volume = 0.16;
+
+  const setPlayingUI = (playing) => {
+    musicToggle.classList.toggle("playing", playing);
+    musicToggle.setAttribute("aria-pressed", String(playing));
+    musicToggle.setAttribute("aria-label", playing ? "Pause background music" : "Play background music");
+  };
+
+  musicToggle.addEventListener("click", async () => {
+    if (music.paused) {
+      try { await music.play(); setPlayingUI(true); }
+      catch { setPlayingUI(false); }
+    } else {
+      music.pause();
+      setPlayingUI(false);
+    }
+  });
+
+  const startOnFirstInteraction = async () => {
+    if (!music.paused) return;
+    try { await music.play(); setPlayingUI(true); }
+    catch { setPlayingUI(false); }
+  };
+
+  window.addEventListener("pointerdown", startOnFirstInteraction, { once: true });
+  window.addEventListener("keydown", startOnFirstInteraction, { once: true });
+  window.addEventListener("touchstart", startOnFirstInteraction, { once: true });
+}
