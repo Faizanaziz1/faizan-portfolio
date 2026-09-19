@@ -388,3 +388,18 @@ audio {
     bottom: 18px !important;
   }
 }
+
+.instagram-icon {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.instagram-icon .instagram-dot {
+  fill: currentColor;
+  stroke: none;
+}
