@@ -197,6 +197,18 @@ h1 {
 }
 
 /* =========================================
+   WORK SECTION SPACING
+   ========================================= */
+
+.work {
+  padding-bottom: 40px;
+}
+
+.about {
+  padding-top: 80px;
+}
+
+/* =========================================
    PROJECTS
    ========================================= */
 
@@ -511,6 +523,14 @@ audio {
   .section {
     width: calc(100% - 32px);
     padding: 100px 0;
+  }
+
+  .work {
+    padding-bottom: 30px;
+  }
+
+  .about {
+    padding-top: 60px;
   }
 
   .section-heading {
