@@ -6,9 +6,13 @@
   --soft: rgba(255,255,255,.06);
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -27,7 +31,14 @@ canvas {
   pointer-events: none;
 }
 
-a { color: inherit; text-decoration: none; }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================================
+   HERO
+   ========================================= */
 
 .hero {
   min-height: 100svh;
@@ -58,9 +69,13 @@ a { color: inherit; text-decoration: none; }
   color: #aaa;
 }
 
-.nav-links a:hover { color: white; }
+.nav-links a:hover {
+  color: white;
+}
 
-.menu { display: none; }
+.menu {
+  display: none;
+}
 
 .hero-content {
   flex: 1;
@@ -95,7 +110,10 @@ h1 {
   letter-spacing: -.03em;
 }
 
-.role span { color: #666; padding: 0 7px; }
+.role span {
+  color: #666;
+  padding: 0 7px;
+}
 
 .socials {
   display: flex;
@@ -142,8 +160,14 @@ h1 {
 }
 
 @keyframes float {
-  50% { transform: translateY(5px); }
+  50% {
+    transform: translateY(5px);
+  }
 }
+
+/* =========================================
+   SECTIONS
+   ========================================= */
 
 .section {
   width: min(1100px, calc(100% - 48px));
@@ -172,6 +196,10 @@ h1 {
   white-space: nowrap;
 }
 
+/* =========================================
+   PROJECTS
+   ========================================= */
+
 .project {
   display: grid;
   grid-template-columns: 90px 1fr;
@@ -180,9 +208,14 @@ h1 {
   border-top: 1px solid var(--line);
 }
 
-.project-number { color: #555; font-size: 13px; }
+.project-number {
+  color: #555;
+  font-size: 13px;
+}
 
-.project-info { max-width: 780px; }
+.project-info {
+  max-width: 780px;
+}
 
 .project-type {
   margin: 0 0 15px;
@@ -197,7 +230,7 @@ h1 {
   letter-spacing: -.055em;
 }
 
-.project p:not(.project-type) {
+.project p:not(.project-type):not(.status-text) {
   color: #999;
   line-height: 1.75;
   max-width: 650px;
@@ -227,6 +260,49 @@ h1 {
   padding-bottom: 5px;
 }
 
+.project-link:hover {
+  border-color: white;
+  color: white;
+}
+
+/* =========================================
+   PROJECT STATUS
+   ========================================= */
+
+.project-status {
+  margin-top: 28px;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border: 1px solid rgba(96, 165, 250, .25);
+  border-radius: 999px;
+  background: rgba(30, 41, 59, .35);
+  color: #93c5fd;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.status-icon {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.status-text {
+  margin: 12px 0 0;
+  color: #9ca3af;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   ABOUT
+   ========================================= */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1.1fr .9fr;
@@ -246,7 +322,13 @@ h1 {
   font-size: 15px;
 }
 
-.contact-content { padding-left: 75px; }
+/* =========================================
+   CONTACT
+   ========================================= */
+
+.contact-content {
+  padding-left: 75px;
+}
 
 .contact-content > p {
   color: #888;
@@ -270,7 +352,13 @@ h1 {
   font-size: 13px;
 }
 
-.contact-links a:hover { color: white; }
+.contact-links a:hover {
+  color: white;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
 
 footer {
   width: min(1100px, calc(100% - 48px));
@@ -284,19 +372,9 @@ footer {
   letter-spacing: .16em;
 }
 
-@media (max-width: 700px) {
-  .nav { width: calc(100% - 32px); }
-  .nav-links { display: none; }
-  .menu { display: flex; flex-direction: column; gap: 5px; border: 0; background: none; }
-  .menu span { width: 22px; height: 1px; background: white; }
-  .section { width: calc(100% - 32px); padding: 100px 0; }
-  .section-heading { margin-bottom: 55px; grid-template-columns: 40px 1fr; }
-  .project { grid-template-columns: 45px 1fr; padding: 38px 0; }
-  .about-grid { grid-template-columns: 1fr; gap: 40px; }
-  .contact-content { padding-left: 40px; }
-  .email { font-size: 27px; }
-  .contact-links { gap: 18px; flex-wrap: wrap; }
-}
+/* =========================================
+   MUSIC BUTTON
+   ========================================= */
 
 .music-toggle {
   position: fixed !important;
@@ -383,12 +461,9 @@ audio {
   }
 }
 
-@media (max-width: 700px) {
-  .music-toggle {
-    right: 16px !important;
-    bottom: 18px !important;
-  }
-}
+/* =========================================
+   INSTAGRAM ICON
+   ========================================= */
 
 .instagram-icon {
   width: 21px;
@@ -403,4 +478,90 @@ audio {
 .instagram-icon .instagram-dot {
   fill: currentColor;
   stroke: none;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+  .nav {
+    width: calc(100% - 32px);
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 0;
+    background: none;
+  }
+
+  .menu span {
+    width: 22px;
+    height: 1px;
+    background: white;
+  }
+
+  .section {
+    width: calc(100% - 32px);
+    padding: 100px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 55px;
+    grid-template-columns: 40px 1fr;
+  }
+
+  .project {
+    grid-template-columns: 45px 1fr;
+    padding: 38px 0;
+  }
+
+  .project-info {
+    min-width: 0;
+  }
+
+  .status-badge {
+    font-size: 10px;
+    letter-spacing: 1.4px;
+    padding: 9px 13px;
+    gap: 8px;
+  }
+
+  .status-icon {
+    font-size: 15px;
+  }
+
+  .status-text {
+    font-size: 14px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-content {
+    padding-left: 40px;
+  }
+
+  .email {
+    font-size: 27px;
+  }
+
+  .contact-links {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .music-toggle {
+    right: 16px !important;
+    bottom: 18px !important;
+  }
 }
