@@ -3,186 +3,523 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Faizan Aziz — Data Scientist & Python Developer portfolio." />
+
+  <meta
+    name="description"
+    content="Faizan Aziz — Data Scientist & Python Developer portfolio."
+  />
+
   <title>Faizan Aziz — Data Scientist</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
   <canvas id="stars" aria-hidden="true"></canvas>
 
+  <!-- =========================================
+       HERO
+       ========================================= -->
+
   <header class="hero" id="home">
+
     <nav class="nav">
+
       <a class="brand" href="#home">FA.</a>
-      <button class="menu" aria-label="Open navigation" aria-expanded="false">
-        <span></span><span></span>
+
+      <button
+        class="menu"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
       </button>
+
       <div class="nav-links">
         <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </div>
+
     </nav>
 
-    <button class="music-toggle" id="musicToggle" type="button" aria-label="Play background music" aria-pressed="false">
-  <span class="music-icon">♪</span>
-  <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
-</button>
 
-<audio id="backgroundMusic" loop preload="metadata">
-  <source src="background.mp3" type="audio/mpeg" />
-</audio>
+    <!-- =========================================
+         MUSIC
+         ========================================= -->
 
-<main class="hero-content">
-      <p class="eyebrow">HELLO, I'M</p>
-      <h1>Faizan Aziz</h1>
-      <p class="role">Data Scientist <span>·</span> Python Developer <span>·</span> Content Creator</p>
-     <div class="socials" aria-label="Social links">
-  <a href="https://github.com/Faizanaziz1" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+    <button
+      class="music-toggle"
+      id="musicToggle"
+      type="button"
+      aria-label="Play background music"
+      aria-pressed="false"
+    >
+      <span class="music-icon">♪</span>
 
-  <a href="https://www.linkedin.com/in/faizanaziz61/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+      <span
+        class="music-bars"
+        aria-hidden="true"
+      >
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </button>
 
-  <a href="./resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume">CV</a>
+    <audio
+      id="backgroundMusic"
+      loop
+      preload="metadata"
+    >
+      <source
+        src="background.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
 
-  <a href="mailto:Faizanaziz636@gmail.com" aria-label="Email">@</a>
 
-  <a href="https://www.instagram.com/burgerbanditx/" target="_blank" rel="noreferrer" aria-label="Instagram">
-  <svg class="instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
-    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-    <circle cx="12" cy="12" r="4"></circle>
-    <circle class="instagram-dot" cx="17.5" cy="6.5" r="1"></circle>
-  </svg>
-</a>
-</div>
+    <!-- =========================================
+         HERO CONTENT
+         ========================================= -->
 
-      <a class="more" href="#work">
+    <main class="hero-content">
+
+      <p class="eyebrow">
+        HELLO, I'M
+      </p>
+
+      <h1>
+        Faizan Aziz
+      </h1>
+
+      <p class="role">
+        Data Scientist
+        <span>·</span>
+        Python Developer
+        <span>·</span>
+        Content Creator
+      </p>
+
+
+      <!-- SOCIAL LINKS -->
+
+      <div
+        class="socials"
+        aria-label="Social links"
+      >
+
+        <a
+          href="https://github.com/Faizanaziz1"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+        >
+          GH
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/faizanaziz61/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+        >
+          in
+        </a>
+
+        <a
+          href="./resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Resume"
+        >
+          CV
+        </a>
+
+        <a
+          href="mailto:Faizanaziz636@gmail.com"
+          aria-label="Email"
+        >
+          @
+        </a>
+
+        <a
+          href="https://www.instagram.com/burgerbanditx/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram"
+        >
+
+          <svg
+            class="instagram-icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <rect
+              x="3"
+              y="3"
+              width="18"
+              height="18"
+              rx="5"
+            ></rect>
+
+            <circle
+              cx="12"
+              cy="12"
+              r="4"
+            ></circle>
+
+            <circle
+              class="instagram-dot"
+              cx="17.5"
+              cy="6.5"
+              r="1"
+            ></circle>
+
+          </svg>
+
+        </a>
+
+      </div>
+
+
+      <!-- MORE -->
+
+      <a
+        class="more"
+        href="#work"
+      >
         <span>MORE</span>
         <span class="arrow">↓</span>
       </a>
+
     </main>
+
   </header>
 
-  <section class="section work" id="work">
-   <div class="section-heading">
-  <h2>Selected Work</h2>
-</div>
+
+  <!-- =========================================
+       SELECTED WORK
+       ========================================= -->
+
+  <section
+    class="section work"
+    id="work"
+  >
+
+    <div class="section-heading">
+
+      <span>01</span>
+
+      <h2>
+        Selected Work
+      </h2>
+
+    </div>
+
+
+    <!-- =========================================
+         PROJECT 01 — CUSTOMER CHURN
+         ========================================= -->
 
     <article class="project">
-      <div class="project-number">01</div>
+
+      <div class="project-number">
+        01
+      </div>
+
       <div class="project-info">
-        <p class="project-type">MACHINE LEARNING · FULL STACK</p>
-        <h3>Customer Churn Intelligence</h3>
+
+        <p class="project-type">
+          MACHINE LEARNING · FULL STACK
+        </p>
+
+        <h3>
+          Customer Churn Intelligence
+        </h3>
+
         <p>
           An end-to-end machine learning application that predicts customer
           churn, exposes predictions through FastAPI, and presents insights
           through an interactive dashboard.
         </p>
+
         <div class="tags">
-          <span>Python</span><span>Scikit-learn</span><span>PostgreSQL</span><span>FastAPI</span>
+
+          <span>Python</span>
+          <span>Scikit-learn</span>
+          <span>PostgreSQL</span>
+          <span>FastAPI</span>
+
         </div>
-        <a class="project-link" href="https://github.com/Faizanaziz1/customer-churn-intelligence" target="_blank" rel="noreferrer">VIEW PROJECT ↗</a>
+
+        <a
+          class="project-link"
+          href="https://github.com/Faizanaziz1/customer-churn-intelligence"
+          target="_blank"
+          rel="noreferrer"
+        >
+          VIEW PROJECT ↗
+        </a>
+
       </div>
+
     </article>
 
 
+    <!-- =========================================
+         PROJECT 02 — JOB RECOMMENDATION
+         ========================================= -->
 
-       <article class="project">
-      <div class="project-number">02</div>
+    <article class="project">
+
+      <div class="project-number">
+        02
+      </div>
+
       <div class="project-info">
-        <p class="project-type">NLP · MACHINE LEARNING · FULL STACK</p>
-        <h3>Job Recommendation Engine</h3>
+
+        <p class="project-type">
+          NLP · MACHINE LEARNING · FULL STACK
+        </p>
+
+        <h3>
+          Job Recommendation Engine
+        </h3>
+
         <p>
           An intelligent job matching system that combines semantic similarity,
           skill matching, experience and location to recommend relevant
           opportunities with explainable match scores.
         </p>
+
         <div class="tags">
-          <span>Python</span><span>NLP</span><span>Sentence Transformers</span><span>FastAPI</span>
+
+          <span>Python</span>
+          <span>NLP</span>
+          <span>Sentence Transformers</span>
+          <span>FastAPI</span>
+
         </div>
-        <a class="project-link" href="https://github.com/Faizanaziz1/job-recommendation-engine" target="_blank" rel="noreferrer">VIEW PROJECT ↗</a>
+
+        <a
+          class="project-link"
+          href="https://github.com/Faizanaziz1/job-recommendation-engine"
+          target="_blank"
+          rel="noreferrer"
+        >
+          VIEW PROJECT ↗
+        </a>
+
       </div>
+
     </article>
 
-       <article class="project">
-  <div class="project-number">03</div>
 
-  <div class="project-info">
-    <p class="project-type">COMPUTER VISION · DEEP LEARNING</p>
+    <!-- =========================================
+         PROJECT 03 — UAV FOREST FIRE
+         ========================================= -->
 
-    <h3>UAV Forest Fire Detection</h3>
+    <article class="project">
 
-    <p>
-      A lightweight multimodal deep learning framework for early forest
-      fire detection using synchronized RGB and thermal UAV imagery.
-    </p>
+      <div class="project-number">
+        03
+      </div>
 
-    <div class="tags">
-      <span>PyTorch</span>
-      <span>Computer Vision</span>
-      <span>RGB-Thermal</span>
-      <span>UAV</span>
-    </div>
+      <div class="project-info">
 
-    <div class="project-status">
-      <span class="status-badge">
-        <span class="status-icon">⚙</span>
-        CURRENTLY UNDER DEVELOPMENT
-      </span>
+        <p class="project-type">
+          COMPUTER VISION · DEEP LEARNING
+        </p>
 
-      <p class="status-text">
-        Research in progress as of 9/22/26. Updates coming soon.
-      </p>
-    </div>
-  </div>
-</article>
+        <h3>
+          UAV Forest Fire Detection
+        </h3>
 
-  <section class="section about" id="about">
+        <p>
+          A lightweight multimodal deep learning framework for early forest
+          fire detection using synchronized RGB and thermal UAV imagery.
+        </p>
+
+        <div class="tags">
+
+          <span>PyTorch</span>
+          <span>Computer Vision</span>
+          <span>RGB-Thermal</span>
+          <span>UAV</span>
+
+        </div>
+
+
+        <!-- PROJECT STATUS -->
+
+        <div class="project-status">
+
+          <span class="status-badge">
+
+            <span class="status-icon">
+              ⚙
+            </span>
+
+            CURRENTLY UNDER DEVELOPMENT
+
+          </span>
+
+          <p class="status-text">
+            Research in progress as of 9/22/26. Updates coming soon.
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  </section>
+
+
+  <!-- =========================================
+       ABOUT
+       ========================================= -->
+
+  <section
+    class="section about"
+    id="about"
+  >
+
     <div class="section-heading">
+
       <span>02</span>
-      <h2>About</h2>
+
+      <h2>
+        About
+      </h2>
+
     </div>
+
 
     <div class="about-grid">
+
       <p class="about-lead">
         I build practical machine learning and data-driven applications,
-        with a focus on Python, computer vision and intelligent systems.
+        with a focus on Python, NLP, computer vision and intelligent systems.
       </p>
+
+
       <div class="about-copy">
+
         <p>
           I'm currently pursuing my M.Tech in Data Science and working on
           projects that connect machine learning research with usable software.
         </p>
+
         <p>
           My toolkit includes Python, SQL, Scikit-learn, PyTorch, TensorFlow,
           FastAPI, PostgreSQL and OpenCV.
         </p>
+
       </div>
+
     </div>
+
   </section>
 
-  <section class="section contact" id="contact">
+
+  <!-- =========================================
+       CONTACT
+       ========================================= -->
+
+  <section
+    class="section contact"
+    id="contact"
+  >
+
     <div class="section-heading">
+
       <span>03</span>
-      <h2>Let's talk</h2>
+
+      <h2>
+        Let's talk
+      </h2>
+
     </div>
+
+
     <div class="contact-content">
-      <p>Have an opportunity, project, or just want to connect?</p>
-      <a class="email" href="mailto:Faizanaziz636@gmail.com">Faizanaziz636@gmail.com ↗</a>
+
+      <p>
+        Have an opportunity, project, or just want to connect?
+      </p>
+
+      <a
+        class="email"
+        href="mailto:Faizanaziz636@gmail.com"
+      >
+        Faizanaziz636@gmail.com ↗
+      </a>
+
+
       <div class="contact-links">
-        <a href="https://github.com/Faizanaziz1" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/faizanaziz61/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+
+        <a
+          href="https://github.com/Faizanaziz1"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/faizanaziz61/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Resume
+        </a>
+
       </div>
+
     </div>
+
   </section>
+
+
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
 
   <footer>
-    <span>FAIZAN AZIZ</span>
-    <span>© 2026</span>
+
+    <span>
+      FAIZAN AZIZ
+    </span>
+
+    <span>
+      © 2026
+    </span>
+
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
